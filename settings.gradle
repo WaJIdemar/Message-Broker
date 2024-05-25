@@ -1,0 +1,5 @@
+rootProject.name = 'Message-broker'
+include 'message-common'
+include 'message-client'
+include 'message-server'
+
