@@ -23,7 +23,7 @@ public class PullConsumer extends AbstractClient {
         connectOrRegisterConsumer();
     }
 
-    public void connectOrRegisterConsumer() throws IOException, ClassNotFoundException {
+    private void connectOrRegisterConsumer() throws IOException, ClassNotFoundException {
         ServerMessage serverMessage = new ServerMessage(CONNECT_OR_REGISTER);
         Map<String, String> params = new HashMap<>();
         params.put("consumer_name", consumerName);
